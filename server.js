@@ -1,8 +1,8 @@
 const express = require('express');
-const express = express();
+const app = express();
 const port = 3000;
 
-app.get('/route1', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello World!');
 })
 
